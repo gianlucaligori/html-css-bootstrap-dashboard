@@ -40,6 +40,11 @@ main {
     width: 138px;
 }
 
+.class_logo {
+    width: 25px;
+}
+
+
 
 @media screen and (max-width: 576px) {
     .sidebar{
@@ -49,8 +54,4 @@ main {
     main {
      margin-left: 80px;
     }
-
-    /* .blue_row {
-        height: 250px;
-    } */
 }

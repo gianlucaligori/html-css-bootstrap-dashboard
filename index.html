@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
+
   <body>
 
     <nav class="navbar fixed-top flex-nowrap bg-body-tertiary">
@@ -47,6 +48,7 @@
 
 
     <main class="overflow-y-auto" >
+        <!-- BLUE ROW -->
         <div class="blue_row p-3 text-white">
             <div class="row">
                 <div class="p-2 col-12 col-md-4 col-lg-2 order-sm-1 order-md-3">
@@ -54,176 +56,251 @@
                     <a href=""><i class="fa-solid text-white fa-plus border p-1"></i></a>
                 </div>
 
-            <div class="p-2 col-8 off-set-4 col-md-4 col-lg-6 order-sm-1 order-md-1">
-                <span class="fs-3 order-sm-1">Boolean</span>
-                <span class="badge pill rounded-pill text-white">Piano Blaze</span>
-                <span class="badge pill rounded-pill text-white">3 App</span>
-                <i class="align-middle fa-solid fa-angles-right"></i>
-                <span class="badge pill rounded-pill text-white d-lg-none">+</span>
-                <span class="badge d-none d-lg-inline pill rounded-pill text-white">Boolean mobile app</span>
-                <span class="badge d-none d-lg-inline pill rounded-pill text-white">Boolean wep app</span>
-                <span class="badge d-none d-lg-inline pill rounded-pill text-white">Boolean blog app</span>
-            </div>
+                <div class="p-2 col-8 off-set-4 col-md-4 col-lg-6 order-sm-1 order-md-1">
+                    <span class="fs-3 order-sm-1">Boolean</span>
+                    <span class="badge pill rounded-pill text-white">Piano Blaze</span>
+                    <span class="badge pill rounded-pill text-white">3 App</span>
+                    <i class="align-middle fa-solid fa-angles-right"></i>
+                    <span class="badge pill rounded-pill text-white d-lg-none">+</span>
+                    <span class="badge d-none d-lg-inline pill rounded-pill text-white">Boolean mobile app</span>
+                    <span class="badge d-none d-lg-inline pill rounded-pill text-white">Boolean wep app</span>
+                    <span class="badge d-none d-lg-inline pill rounded-pill text-white">Boolean blog app</span>
+                </div>
 
-            <div class="p-2 col-5 off-set-7 col-md-4 col-lg-4 order-sm-2 order-md-2">
-                <p class="d-md-block">Studenti online negli ultimi 30 minuti:</p>
-                <span class="fs-2" >125</span>
-            </div>
-            
-
-            <!-- 3 bottoni saranno hidden in mobile e il + lo sarà quando allarghi. Fai 1 sola row  -->
+                <div class="p-2 col-5 off-set-7 col-md-4 col-lg-4 order-sm-2 order-md-2">
+                    <p class="d-md-block">Studenti online negli ultimi 30 minuti:</p>
+                    <span class="fs-2" >125</span>
+                </div>
             </div>
         </div>
-        
-        <div class="card p-4">
-            <div class="card-header">
-              <h3>Prossime classi</h3>
+
+
+        <!-- CONTAINER CARDS -->
+        <div class="container-fluid p-3">
+            <div class="row">
+                <div class="class_faq col-12 col-md-8">
+                        <div class="card">
+                            <div class="card-header">
+                            <h3>Prossime classi</h3>
+                            </div>
+                            
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>
+                                        <span>Nome</span>
+                                    </th>
+                                    <th class="d-none d-md-table-cell">Data inizio</th>
+                                    <th class="d-none d-md-table-cell">ROI</th>
+                                    <th>Stato</th>
+                                    <th>Azioni</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <img class="class_logo" src="assets/img/class-avatar.jpg" alt="">
+                                        <span class="px-2">Classe 75</span>
+                                    </th>
+                                    <td class="d-none d-md-table-cell" >31 Marzo 2023</td>
+                                    <td class="d-none d-md-table-cell">20%</td>
+                                    <td>
+                                        <span class="badge bg-success">Done</span></td>
+                                    <td>
+                                        <button class="btn btn-outline-light border">
+                                            <span><i class="text-body-secondary fa-solid fa-pencil"></i></span>
+                                        </button>
+                                        <button class="btn btn-outline-light border">
+                                            <span><i class="text-body-secondary fa-solid fa-trash"></i></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <img class="class_logo" src="assets/img/class-avatar.jpg" alt="">
+                                        <span class="px-2">Classe 75</span>
+                                    </th>
+                                    <td class="d-none d-md-table-cell" >31 Marzo 2023</td>
+                                    <td class="d-none d-md-table-cell">20%</td>
+                                    <td>
+                                        <span class="badge bg-success">Done</span></td>
+                                    <td>
+                                        <button class="btn btn-outline-light border">
+                                            <span><i class="text-body-secondary fa-solid fa-pencil"></i></span>
+                                        </button>
+                                        <button class="btn btn-outline-light border">
+                                            <span><i class="text-body-secondary fa-solid fa-trash"></i></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <img class="class_logo" src="assets/img/class-avatar.jpg" alt="">
+                                        <span class="px-2">Classe 75</span>
+                                    </th>
+                                    <td class="d-none d-md-table-cell" >31 Marzo 2023</td>
+                                    <td class="d-none d-md-table-cell">20%</td>
+                                    <td>
+                                        <span class="badge bg-success">Done</span></td>
+                                    <td>
+                                        <button class="btn btn-outline-light border">
+                                            <span><i class="text-body-secondary fa-solid fa-pencil"></i></span>
+                                        </button>
+                                        <button class="btn btn-outline-light border">
+                                            <span><i class="text-body-secondary fa-solid fa-trash"></i></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <img class="class_logo" src="assets/img/class-avatar.jpg" alt="">
+                                        <span class="px-2">Classe 75</span>
+                                    </th>
+                                    <td class="d-none d-md-table-cell" >31 Marzo 2023</td>
+                                    <td class="d-none d-md-table-cell">20%</td>
+                                    <td>
+                                        <span class="badge bg-success">Done</span></td>
+                                    <td>
+                                        <button class="btn btn-outline-light border">
+                                            <span><i class="text-body-secondary fa-solid fa-pencil"></i></span>
+                                        </button>
+                                        <button class="btn btn-outline-light border">
+                                            <span><i class="text-body-secondary fa-solid fa-trash"></i></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <img class="class_logo" src="assets/img/class-avatar.jpg" alt="">
+                                        <span class="px-2">Classe 75</span>
+                                    </th>
+                                    <td class="d-none d-md-table-cell" >31 Marzo 2023</td>
+                                    <td class="d-none d-md-table-cell">20%</td>
+                                    <td>
+                                        <span class="badge bg-success">Done</span></td>
+                                    <td>
+                                        <button class="btn btn-outline-light border">
+                                            <span><i class="text-body-secondary fa-solid fa-pencil"></i></span>
+                                        </button>
+                                        <button class="btn btn-outline-light border">
+                                            <span><i class="text-body-secondary fa-solid fa-trash"></i></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <img class="class_logo" src="assets/img/class-avatar.jpg" alt="">
+                                        <span class="px-2">Classe 75</span>
+                                    </th>
+                                    <td class="d-none d-md-table-cell" >31 Marzo 2023</td>
+                                    <td class="d-none d-md-table-cell">20%</td>
+                                    <td>
+                                        <span class="badge bg-success">Done</span></td>
+                                    <td>
+                                        <button class="btn btn-outline-light border">
+                                            <span><i class="text-body-secondary fa-solid fa-pencil"></i></span>
+                                        </button>
+                                        <button class="btn btn-outline-light border">
+                                            <span><i class="text-body-secondary fa-solid fa-trash"></i></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <img class="class_logo" src="assets/img/class-avatar.jpg" alt="">
+                                        <span class="px-2">Classe 75</span>
+                                    </th>
+                                    <td class="d-none d-md-table-cell" >31 Marzo 2023</td>
+                                    <td class="d-none d-md-table-cell">20%</td>
+                                    <td>
+                                        <span class="badge bg-success">Done</span></td>
+                                    <td>
+                                        <button class="btn btn-outline-light border">
+                                            <span><i class="text-body-secondary fa-solid fa-pencil"></i></span>
+                                        </button>
+                                        <button class="btn btn-outline-light border">
+                                            <span><i class="text-body-secondary fa-solid fa-trash"></i></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <img class="class_logo" src="assets/img/class-avatar.jpg" alt="">
+                                        <span class="px-2">Classe 75</span>
+                                    </th>
+                                    <td class="d-none d-md-table-cell" >31 Marzo 2023</td>
+                                    <td class="d-none d-md-table-cell">20%</td>
+                                    <td>
+                                        <span class="badge bg-success">Done</span></td>
+                                    <td>
+                                        <button class="btn btn-outline-light border">
+                                            <span><i class="text-body-secondary fa-solid fa-pencil"></i></span>
+                                        </button>
+                                        <button class="btn btn-outline-light border">
+                                            <span><i class="text-body-secondary fa-solid fa-trash"></i></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table> 
+                        </div>
+                        <!-- FINE TABELLA -->
+
+                        <!-- ACCORDION - FAQ -->
+                        <div class="py-4 accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Accordion Item #1
+                                </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- ACCORDION FAQ  -->
+                </div>
+
+
+
+
+
+                <div class="todo_charts col-12 col-lg-4">
+                    <div class="contents">
+                      <div class="card">
+                        <h3 class="card-header">Todo</h3>
+                        <div class="card-body">
+                          <ul class="list-group">
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                              <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                              <label class="form-check-label" for="secondCheckbox">Lezione su Bootstrap 5 in classe #75</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                              <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
             </div>
-            
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Nome</th>
-                    <th scope="col">Stato</th>
-                    <th scope="col">Azioni</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Classe 75</th>
-                    <td><span class="badge bg-success">Done</span></td>
-                    <td>
-                        <button>
-                            <span><i class="fa-solid fa-pencil"></i></span>
-                        </button>
-                        <button>
-                            <span><i class="fa-solid fa-trash"></i></span>
-                        </button>
-                    </td>
-                  </tr>
+        </div>
 
-                  <tr>
-                    <th scope="row">Classe 76</th>
-                    <td><span class="badge bg-success">Done</span></td>
-                    <td>
-                        <button>
-                            <span><i class="fa-solid fa-pencil"></i></span>
-                        </button>
-                        <button>
-                            <span><i class="fa-solid fa-trash"></i></span>
-                        </button>
-                    </td>
-                  </tr>
 
-                  <tr>
-                    <th scope="row">Classe 76</th>
-                    <td><span class="badge bg-success">Done</span></td>
-                    <td>
-                        <button>
-                            <span><i class="fa-solid fa-pencil"></i></span>
-                        </button>
-                        <button>
-                            <span><i class="fa-solid fa-trash"></i></span>
-                        </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Classe 79</th>
-                    <td colspan="2"><span class="badge bg-warning">Process</span></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Classe 80</th>
-                    <td colspan="2"><span class="badge bg-success">Done</span></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Classe 81</th>
-                    <td colspan="2"><span class="badge bg-success">Done</span></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Classe 82</th>
-                    <td colspan="2"><span class="badge bg-danger">Failed</span></td>
-                  </tr>
+    
+                
 
-                  <tr>
-                    <th scope="row">Classe 75</th>
-                    <td><span class="badge bg-success">Done</span></td>
-                    <td>
-                        <button>
-                            <span><i class="fa-solid fa-pencil"></i></span>
-                        </button>
-                        <button>
-                            <span><i class="fa-solid fa-trash"></i></span>
-                        </button>
-                    </td>
-                  </tr>
 
-                  <tr>
-                    <th scope="row">Classe 76</th>
-                    <td><span class="badge bg-success">Done</span></td>
-                    <td>
-                        <button>
-                            <span><i class="fa-solid fa-pencil"></i></span>
-                        </button>
-                        <button>
-                            <span><i class="fa-solid fa-trash"></i></span>
-                        </button>
-                    </td>
-                  </tr>
 
-                  <tr>
-                    <th scope="row">Classe 76</th>
-                    <td><span class="badge bg-success">Done</span></td>
-                    <td>
-                        <button>
-                            <span><i class="fa-solid fa-pencil"></i></span>
-                        </button>
-                        <button>
-                            <span><i class="fa-solid fa-trash"></i></span>
-                        </button>
-                    </td>
-                  </tr>
 
-                  <tr>
-                    <th scope="row">Classe 75</th>
-                    <td><span class="badge bg-success">Done</span></td>
-                    <td>
-                        <button>
-                            <span><i class="fa-solid fa-pencil"></i></span>
-                        </button>
-                        <button>
-                            <span><i class="fa-solid fa-trash"></i></span>
-                        </button>
-                    </td>
-                  </tr>
 
-                  <tr>
-                    <th scope="row">Classe 76</th>
-                    <td><span class="badge bg-success">Done</span></td>
-                    <td>
-                        <button>
-                            <span><i class="fa-solid fa-pencil"></i></span>
-                        </button>
-                        <button>
-                            <span><i class="fa-solid fa-trash"></i></span>
-                        </button>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">Classe 76</th>
-                    <td><span class="badge bg-success">Done</span></td>
-                    <td>
-                        <button>
-                            <span><i class="fa-solid fa-pencil"></i></span>
-                        </button>
-                        <button>
-                            <span><i class="fa-solid fa-trash"></i></span>
-                        </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-          </div>
 
 
     </main>
