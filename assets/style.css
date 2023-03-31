@@ -1,7 +1,8 @@
 /* PALETTE */
 
 :root {
-    --blue-row: rgb(27,114,232)
+    --blue-row: rgb(27,114,232);
+    --pills: rgb(22,91,186);
 }
 
 .sidebar {
@@ -16,10 +17,40 @@
     top: 54px;
 }
 
-.blue_row {
+
+main {
     margin-top: 54px;
     margin-left: 165px;
-    height: 15vh;
-    max-width: calc(100% - 165px);
+}
+.blue_row {
     background-color: var(--blue-row);
+}
+
+.pill {
+    background-color: var(--pills);
+}
+
+.mobile_logo {
+    height: 50px;
+    width: 80px;
+}
+
+.boo_logo {
+    height: 50px;
+    width: 138px;
+}
+
+
+@media screen and (max-width: 576px) {
+    .sidebar{
+        width: 80px;
+    }
+
+    main {
+     margin-left: 80px;
+    }
+
+    /* .blue_row {
+        height: 250px;
+    } */
 }
