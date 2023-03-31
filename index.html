@@ -18,10 +18,19 @@
             <input type="text " class="form-control" placeholder="Cerca qui:" aria-label="Username"
                 aria-describedby="basic-addon1">
             <div class="text-center px-3">
-                <i class="px-1 d-none d-sm-inline-block fa-solid fa-list-ul ml-2"></i>
-                <i class="px-1 d-none d-sm-inline-block fa-regular fa-circle-question ml-2"></i>
-                <i class="px-1 d-none d-sm-inline-block fa-solid fa-ellipsis-vertical m-2"></i>
-                <i class="px-1 d-sm-inline-block fa-solid fa-bell" style="color: #ff8f00;"></i>
+                <div class="dropdown">
+                    <i class="px-1 d-none d-sm-inline-block fa-solid fa-list-ul ml-2"></i>
+                    <i class="px-1 d-none d-sm-inline-block fa-regular fa-circle-question ml-2"></i>
+                    <i class="px-1 d-none d-sm-inline-block fa-solid fa-ellipsis-vertical m-2"></i>
+                    <button class="p-0 border-0 bg-transparent" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-bell" style="color: #ff8f00;"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">Profilo</a></li>
+                      <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -52,9 +61,66 @@
         <div class="blue_row p-3 text-white">
             <div class="row">
                 <div class="p-2 col-12 col-md-4 col-lg-2 order-sm-1 order-md-3">
-                    <span>Nuovo Studente</span>
-                    <a href=""><i class="fa-solid text-white fa-plus border p-1"></i></a>
-                </div>
+                    <!-- <span>Nuovo Studente</span> -->
+                    <div class="text-white fw-semibold d-flex align-items-center text-nowrap">Nuovo Studente
+                        <button class="btn border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-plus text-white border p-2 rounded"></i>
+                        </button>
+                      </div>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Inserisci un nuovo studente</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <div class="mb-3 d-flex gap-3">
+                            <input type="text" class="form-control" id="" placeholder="Nome">
+                            <input type="text" class="form-control" id="" placeholder="Cognome">
+                          </div>
+                          <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Indirizzo Email">
+                          </div>
+                          <div class="mb-3 d-flex gap-3">
+                            <input type="password" id="inputPassword6" placeholder="Password" class="form-control" aria-labelledby="passwordHelpInline">
+                            <div id="passwordHelpInline" class="form-text">
+                              La password deve essere composta da almeno 8 caratteri.
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <input type="text" class="form-control" id="" placeholder="Indirizzo">
+                          </div>
+                          <div class="mb-3">
+                            <input type="text" class="form-control" id="" placeholder="CittÃ ">
+                          </div>
+                          <div class="mb-3">
+                            <input type="text" class="form-control" id="" placeholder="CAP">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Scegli Stato</label>
+                            <select class="form-select" aria-label="Default select example">
+                              <option value="0">Italia</option>
+                              <option value="1">Spagna</option>
+                              <option value="2">Germania</option>
+                              <option value="3">Francia</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label for="formFile" class="form-label">Seleziona una Foto</label>
+                            <input class="form-control" type="file" id="formFile">
+                          </div>
+                          <div class="mb-3 form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Seleziona per proseguire
+                            </label>
+                          </div>
+                          <div class="mb-3 d-flex">
+                            <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+                            <label class="btn btn-primary" for="btn-check-2">Checked</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
                 <div class="p-2 col-8 off-set-4 col-md-4 col-lg-6 order-sm-1 order-md-1">
                     <span class="fs-3 order-sm-1">Boolean</span>
@@ -247,7 +313,7 @@
                         <!-- FINE TABELLA -->
 
                         <!-- ACCORDION - FAQ -->
-                        <div class="py-4 accordion" id="accordionExample">
+                        <div class="accordion py-3" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -267,7 +333,8 @@
 
 
 
-                <div class="todo_charts col-12 col-lg-4">
+                <div class="todo_charts col-12 col-md-4">
+                    
                     <div class="contents">
                       <div class="card">
                         <h3 class="card-header">Todo</h3>
@@ -288,7 +355,26 @@
                           </ul>
                         </div>
                       </div>
+
+
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                            </ul>
+                            <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
