@@ -16,6 +16,12 @@
     position: fixed;
     top: 54px;
 }
+.fa-house,
+.fa-chart-simple,
+.fa-signal {
+    height: 16px;
+    width: 20px;
+}
 
 main {
     margin-top: 54px;
@@ -46,8 +52,6 @@ main {
 .stats {
     width: auto;
 }
-
-
 
 @media screen and (max-width: 576px) {
     .sidebar{
