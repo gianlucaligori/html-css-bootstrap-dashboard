@@ -17,7 +17,6 @@
     top: 54px;
 }
 
-
 main {
     margin-top: 54px;
     margin-left: 165px;
@@ -42,6 +41,10 @@ main {
 
 .class_logo {
     width: 25px;
+}
+
+.stats {
+    width: auto;
 }
 
 
